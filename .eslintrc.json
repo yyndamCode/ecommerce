@@ -1,0 +1,6 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "max-len": [1, 120] // Adjust the second value to your desired max length
+  }
+}

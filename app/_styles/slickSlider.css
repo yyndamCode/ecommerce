@@ -1,0 +1,56 @@
+.swiper-wrapper {
+  background-color: transparent !important;
+}
+.swiper-slide .swiper-slide-next .swiper-slide-prev {
+  background-color: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-f7vrd6).ant-menu-inline > .ant-menu-item,
+:where(.css-dev-only-do-not-override-f7vrd6).ant-menu-vertical > .ant-menu-item,
+:where(.css-dev-only-do-not-override-f7vrd6).ant-menu-inline
+  > .ant-menu-submenu
+  > .ant-menu-submenu-title,
+:where(.css-dev-only-do-not-override-f7vrd6).ant-menu-vertical
+  > .ant-menu-submenu
+  > .ant-menu-submenu-title {
+  height: auto !important;
+  line-height: 34px !important;
+}
+.custom-carousel .slick-dots li {
+  margin: 0 0; /* Adjust the horizontal margin between dots */
+}
+.custom-carousel .slick-dots li.slick-active button:before {
+  color: gray; /* Active dot color */
+  opacity: 1;
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 9px;
+  line-height: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  content: "•";
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  color: black;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-right: 12px !important;
+}
+.swiper-pagination-bullet {
+  background-color: gray !important;
+  width: 14px !important;
+  height: 14px !important ;
+  opacity: 0.6 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: red !important;
+  border: 2px solid #F5F5F5 !important;
+}

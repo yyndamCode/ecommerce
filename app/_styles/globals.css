@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.ant-menu li {
+  padding: 0 !important;
+}
+.ant-menu-submenu-title {
+  padding: 0 !important;
+}
+.ant-menu-item .ant-menu-item-only-child {
+  padding: 0 10px !important;
+}
+.menu-container .ant-menu-item-only-child {
+  transition: background-color 0.3s ease;
+}
+
+.menu-container .ant-menu-item-only-child:hover {
+  background-color: #e0f7fa; /* Custom hover background color */
+}
+.ant-menu-title-content {
+  font-size: 16px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.FlashSales__title::before {
+  content: " ";
+  background-color: #db4444;
+  font-weight: bold;
+  padding: 9px 8px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  animation: smoothScroll 1s forwards;
+}
+.circle{
+  background: #000000;
+  color: #ffffff;
+}
+.serviceCard{
+  transition: 0.3s ease;
+}
+
+.serviceCard:hover .circle{
+  background: #ffffff;
+  color: #000000;
+}
+
+.swiper-button-prev{
+  display: none !important;
+}
+.swiper-button-next{
+  display: none !important;
+}
