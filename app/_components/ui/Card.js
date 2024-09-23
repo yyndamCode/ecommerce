@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export const CustomCard = ({ children, className }) => {
+ const Card = ({ children, className }) => {
   return (
     <div
       className={`relative  ${className}`}
@@ -10,3 +10,4 @@ export const CustomCard = ({ children, className }) => {
     </div>
   );
 };
+export default Card;
