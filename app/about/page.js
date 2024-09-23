@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AboutImage from "@/public/about.png";
 import {LiaShippingFastSolid} from "react-icons/lia";
-import {CustomCard} from "@/app/_components/ui/CustomCard";
+import {Card} from "@/app/_components/ui/Card";
 import ProductSwiper from "@/app/_components/ui/ProductSwiper";
 import PersonDetails from "@/app/_lib/PersonDetails";
 import {SwiperSlide} from "swiper/react";
@@ -46,6 +46,7 @@ export default function Page() {
                             className="  w-full h-auto"
                             style={{objectFit: "contain"}}
                             alt="Login"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     </div>
                 </div>
@@ -55,7 +56,7 @@ export default function Page() {
         <section className="relative my-[140px] ">
             <div className="grid grid-cols-4 gap-8">
 
-                <CustomCard className="serviceCard   border px-[50px] py-[30px] grid gap-6 justify-items-center rounded-md
+                <Card className="serviceCard   border px-[50px] py-[30px] grid gap-6 justify-items-center rounded-md
                 hover:bg-primary-9 hover:text-primary-7 ">
                     <div className="p-3 w-[80px] bg-gray-300 rounded-full">
             <span
@@ -70,8 +71,8 @@ export default function Page() {
                             Sallers active our site
                         </p>
                     </article>
-                </CustomCard>
-                <CustomCard className="serviceCard   border px-[50px] py-[30px] grid gap-6 justify-items-center
+                </Card>
+                <Card className="serviceCard   border px-[50px] py-[30px] grid gap-6 justify-items-center
                 rounded-md
                 hover:bg-primary-9 hover:text-primary-7 ">
                     <div className="p-3 w-[80px] bg-gray-300 rounded-full">
@@ -87,8 +88,8 @@ export default function Page() {
                             Sallers active our site
                         </p>
                     </article>
-                </CustomCard>
-                <CustomCard className="serviceCard   border px-[50px] py-[30px] grid gap-6 justify-items-center
+                </Card>
+                <Card className="serviceCard   border px-[50px] py-[30px] grid gap-6 justify-items-center
                 rounded-md
                 hover:bg-primary-9 hover:text-primary-7 ">
                     <div className="p-3 w-[80px] bg-gray-300 rounded-full">
@@ -104,8 +105,8 @@ export default function Page() {
                             Sallers active our site
                         </p>
                     </article>
-                </CustomCard>
-                <CustomCard className="serviceCard   border px-[50px] py-[30px] grid gap-6 justify-items-center
+                </Card>
+                <Card className="serviceCard   border px-[50px] py-[30px] grid gap-6 justify-items-center
                 rounded-md
                 hover:bg-primary-9 hover:text-primary-7 ">
                     <div className="p-3 w-[80px] bg-gray-300 rounded-full">
@@ -121,7 +122,7 @@ export default function Page() {
                             Sallers active our site
                         </p>
                     </article>
-                </CustomCard>
+                </Card>
             </div>
         </section>
 
@@ -130,7 +131,7 @@ export default function Page() {
             <ProductSwiper type="PersonDetails" nextRef={{}} prevRef={{}} slidesPerView={3}>
                 {PersonDetails.map((product, index) => (
                     <SwiperSlide key={index} className="w-full item">
-                        <CustomCard className="w-full pb-[70px]">
+                        <Card className="w-full pb-[70px]">
                             <div
                                 className="relative bg-primary-7 mb-9 flex items-center justify-center p-[32px_32px_0_32px] rounded-md">
                                 <div className="relative w-[326px] h-[422px]">
@@ -164,7 +165,7 @@ export default function Page() {
                                     <RiLinkedinLine/>
                                 </Link>
                             </div>
-                        </CustomCard>
+                        </Card>
                     </SwiperSlide>
                 ))}
             </ProductSwiper>

@@ -1,6 +1,6 @@
 import React from 'react';
 import CustomTableRow from "@/app/_components/ui/ProductTable/CustomTableRow";
-import {CustomCard} from "@/app/_components/ui/CustomCard";
+import {Card} from "@/app/_components/ui/Card";
 
 const headerData = [
     {id: 1, text: "Product"},
@@ -38,9 +38,9 @@ function ProductTable({productData}) {
     return (
 
         <div className="flex flex-col">
-            <CustomCard className="shadow grid grid-cols-4 p-[40px_24px] rounded-md my-10">
+            <Card className="shadow grid grid-cols-4 p-[40px_24px] rounded-md my-10">
                 {tableHead}
-            </CustomCard>
+            </Card>
                 {tableBody}
 
 

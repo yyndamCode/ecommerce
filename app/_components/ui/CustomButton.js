@@ -1,5 +1,5 @@
 import React from "react";
-function CustomButton({ children, className, onClick }) {
+function Button({ children, className, onClick }) {
   return (
     <button
       className={` text-base py-4 px-12 rounded-md ${className}`}
@@ -13,4 +13,4 @@ function CustomButton({ children, className, onClick }) {
 }
 
 
-export default CustomButton;
+export default Button;

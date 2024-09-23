@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { GrLinkPrevious } from "react-icons/gr";
 import { GrLinkNext } from "react-icons/gr";
 import exploreData from "../_lib/exploreData";
-import CustomButton from "./ui/CustomButton";
+import Button from "./ui/CustomButton";
 import ProductCard from "./ProductCard";
 
 function ExploreProducts() {
@@ -49,12 +49,12 @@ function ExploreProducts() {
         ))}
       </ul>
       <div className="flex justify-center items-center">
-        <CustomButton
+        <Button
           className=" mt-[60px] bg-primary-9 text-primary-7 "
           onClick={handleLoadMore}
         >
           View All Products
-        </CustomButton>
+        </Button>
       </div>
     </section>
   );

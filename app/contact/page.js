@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { CustomCard } from "../_components/ui/CustomCard";
+import { Card } from "../_components/ui/Card";
 import { IoCallOutline } from "react-icons/io5";
 import { FiMail } from "react-icons/fi";
-import CustomButton from "../_components/ui/CustomButton";
+import Button from "../_components/ui/CustomButton";
 
 export default function Contact() {
   return (
@@ -18,7 +18,7 @@ export default function Contact() {
       </div>
 
       <div className="grid grid-cols-4 gap-7 my-20">
-        <CustomCard className="col-span-1 grid gap-8 shadow-sm	px-9 py-10">
+        <Card className="col-span-1 grid gap-8 shadow-sm px-9 py-10">
           <div className="grid gap-6">
           <div className="flex items-center">
             <span className="flex items-center justify-center bg-primary-9 text-xl text-primary-7 mr-4 w-10 h-10 rounded-full">
@@ -43,8 +43,8 @@ export default function Contact() {
           <p className="text-base font-normal">Emails: support@exclusive.com</p>
           </div>
          </div>
-        </CustomCard>
-        <CustomCard className="col-span-3 shadow-sm	px-9 py-10	 ">
+        </Card>
+        <Card className="col-span-3 shadow-sm	px-9 py-10	 ">
           <div className="grid grid-cols-3 gap-4">
             <input type="text" className="bg-primary-7 p-4 border-none rounded-md" placeholder="Your Name *" />
             <input type="email" className="bg-primary-7 p-4 border-none rounded-md" placeholder="Your Email *" />
@@ -56,9 +56,9 @@ export default function Contact() {
       placeholder=" Your Massage"></textarea>
             </div>
             <div className="text-end">
-              <CustomButton className="bg-primary-9 text-primary-7">Send Massage</CustomButton>
+              <Button className="bg-primary-9 text-primary-7">Send Massage</Button>
             </div>
-        </CustomCard>
+        </Card>
       </div>
     </main>
   );

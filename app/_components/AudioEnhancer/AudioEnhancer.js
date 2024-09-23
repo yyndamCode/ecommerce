@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import DateAudio from "../ui/DateAudio";
-import CustomButton from "../ui/CustomButton";
+import Button from "../ui/CustomButton";
 import Image from "next/image";
 import JBLimg from "@/public/JBL.png";
 
@@ -15,12 +15,12 @@ function AudioEnhancer() {
             Enhance Your Music Experience
           </h2>
           <DateAudio />
-          <CustomButton
+          <Button
             className={"bg-primary-12 mt-10 text-primary-7"}
             onClick={() => {}}
           >
             Buy Now!
-          </CustomButton>
+          </Button>
         </div>
         <div className="relative w-full h-auto md:col-span-2 laptop:col-span-3">
           <Image

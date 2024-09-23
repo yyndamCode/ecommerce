@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { GrLinkPrevious, GrLinkNext } from "react-icons/gr";
 import DateComponent from "../ui/Date";
 import ProductSwiper from "../ui/ProductSwiper";
-import CustomButton from './../ui/CustomButton';
+import Button from './../ui/CustomButton';
 import FastProduct from "@/app/_lib/data";
 import {SwiperSlide} from "swiper/react";
 import ProductCard from "@/app/_components/ProductCard";
@@ -49,12 +49,12 @@ function FlashSales() {
       ))}
       </ProductSwiper>
       <div className="flex justify-center items-center">
-        <CustomButton
+        <Button
           className=" mt-[60px] bg-primary-9 text-primary-7 "
           onClick={() => {}}
         >
           View All Products
-        </CustomButton>
+        </Button>
       </div>
     </section>
   );

@@ -7,7 +7,6 @@ import {LuUser} from "react-icons/lu";
 import {useSelector} from "react-redux";
 import {getCart} from "@/redux/ShopSlice";
 import { useState} from "react";
-import Dropdown from "@/app/_components/Dropdown";
 
  function SearchBar({isOpen}) {
     const likesData = useSelector((state) => state.like.likes);

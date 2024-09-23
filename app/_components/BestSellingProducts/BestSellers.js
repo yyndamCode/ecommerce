@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import ProductCard from "../ProductCard";
-import CustomButton from "../ui/CustomButton";
+import Button from "../ui/CustomButton";
 import bestSellingData from "@/app/_lib/bestSellingData";
 
 function BestSellers() {
@@ -23,12 +23,12 @@ function BestSellers() {
               Best Selling Products
             </h2>
           </div>
-          <CustomButton
+          <Button
             className=" mt-[60px] bg-primary-9 text-primary-7  "
             onClick={handleLoadMore}
           >
             View All
-          </CustomButton>
+          </Button>
         </div>
       </div>
       <ul className="grid grid-cols-2 md:grid-cols-3 laptop:grid-cols-4 gap-8 ">

@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import {CustomCard} from "@/app/_components/ui/CustomCard";
+import Card,  from "@/app/_components/ui/Card";
 import Image from "next/image";
 import  {useState} from "react";
 import { increaseItemQuantity, decreaseItemQuantity } from '@/redux/ShopSlice';
@@ -34,11 +34,11 @@ console.log(rowData.quantity)
             {
                 type === "thead" ?
                     <h2>{rowData.text}</h2> :
-                    <CustomCard
+                    <Card
                         className="relative grid grid-cols-4 items-center shadow p-[40px_24px] my-10 rounded-md">
                         <div className="flex items-center ">
                             <div className="relative w-[54px] h-[54px]">
-                                <Image fill src={rowData.img} alt={rowData.name} style={{objectPosition: "center"}}/>
+                                <Image fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src={rowData.img} alt={rowData.name} style={{objectPosition: "center"}}/>
                             </div>
                             <h2 className="ml-6">{rowData.name} </h2>
                         </div>
@@ -56,7 +56,7 @@ console.log(rowData.quantity)
                             {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
                         </div>
                         <p>{rowData.totalPrice}</p>
-                    </CustomCard>
+                    </Card>
 
             }
         </div>

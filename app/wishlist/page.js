@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import CustomButton from '../_components/ui/CustomButton'
+import Button from '../_components/ui/CustomButton'
 import { useDispatch, useSelector } from 'react-redux'
 import FastProduct from '../_lib/data'
 import ProductCard from '../_components/ProductCard'
@@ -30,7 +30,7 @@ function Wishlist() {
     <main className='my-20'>
       <div className="flex justify-between items-center">
         <h3 className='text-xl font-normal'>Wishlist ({likedProducts.length})</h3>
-        <CustomButton className="border rounded-md" onClick={handleLoadMore}>Move All To Bag</CustomButton>
+        <Button className="border rounded-md" onClick={handleLoadMore}>Move All To Bag</Button>
       </div>
       <div className='my-16'>
          <ul className="grid grid-cols-2 md:grid-cols-3 laptop:grid-cols-4 gap-8 ">
@@ -43,7 +43,7 @@ function Wishlist() {
       </div>
         <div className="flex justify-between items-center">
         <h3 className='text-xl font-normal'>Just for you</h3>
-        <CustomButton className="border rounded-md" onClick={()=>{}}>See All </CustomButton>
+        <Button className="border rounded-md" onClick={()=>{}}>See All </Button>
       </div>
     </main>
   )

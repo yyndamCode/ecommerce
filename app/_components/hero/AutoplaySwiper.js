@@ -29,7 +29,7 @@ function AutoplaySwiper({spaceBetween,slidesPerView}) {
           <div className="md:col-span-2 p-[58px_0_46px_66px]">
             <div className="flex items-center ">
               <div className="w-[40px] h-[50px]">
-                <Image src={heroLogo} alt="logo" className="w-4 " />
+                <Image src={heroLogo} alt="logo" className="w-4 "  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
               </div>
               <p className="ml-[25px]">iPhone 14 Series</p>
             </div>
@@ -59,7 +59,7 @@ function AutoplaySwiper({spaceBetween,slidesPerView}) {
           <div className="md:col-span-2 p-[58px_0_46px_66px]">
             <div className="flex items-center ">
               <div className="w-[40px] h-[50px]">
-                <Image src={heroLogo} alt="logo" className="w-4 " />
+                <Image src={heroLogo} alt="logo" className="w-4 "   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
               </div>
               <p className="ml-[25px]">iPhone 14 Series</p>
             </div>
